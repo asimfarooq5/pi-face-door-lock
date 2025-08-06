@@ -126,6 +126,26 @@ sudo python3 face_recognizer.py
 
 ---
 
+- May require `sudo` for GPIO access.
+- Recognizes faces in real-time.
+- If a known face is detected in **3 consecutive frames**, it toggles GPIO pin **HIGH for 3 seconds**.
+- Then waits **5 seconds** before allowing another unlock.
+- Press `q` to quit.
+
+---
+
+### ✅ Alternative: Run with Options
+
+Run:
+
+```bash
+python3 run.py
+```
+- Choose an option:
+  - Create dataset, train model, and run face recognizer.
+  - Run face recognizer.
+---
+
 ## 🔌 GPIO Setup
 
 ### Default Pin
@@ -165,3 +185,4 @@ You can modify the following values in `face_recognizer.py`:
 ## 📄 License
 
 This project is open-source. Feel free to modify and adapt it for your use case.
+

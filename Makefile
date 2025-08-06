@@ -13,3 +13,17 @@ lint:
 
 check-lint:
 	./.venv/bin/ruff check .
+
+dataset:
+	python3 dataset_creator.py
+
+model-train:
+	python3 model_trainer.py
+
+recognize:
+	python3 face_recognizer.py
+
+run:
+	python3 run.py
+
+
